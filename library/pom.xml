@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.thomasdiewald</groupId>
+    <artifactId>pixelflow</artifactId>
+    <packaging>jar</packaging>
+    <name>PixelFlow Library</name>
+
+    <parent>
+        <groupId>com.thomasdiewald</groupId>
+        <artifactId>pixelflow-parent</artifactId>
+        <version>1.4.0-SNAPSHOT</version>
+    </parent>
+
+    <properties>
+        <jogamp.version>2.3.2</jogamp.version>
+        <org.processing.version>3.3.7</org.processing.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.processing</groupId>
+            <artifactId>video</artifactId>
+            <version>${org.processing.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jogamp.jogl</groupId>
+            <artifactId>jogl-all-main</artifactId>
+            <version>${jogamp.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jogamp.gluegen</groupId>
+            <artifactId>gluegen-rt</artifactId>
+            <version>${jogamp.version}</version>
+        </dependency>
+    </dependencies>
+</project>
