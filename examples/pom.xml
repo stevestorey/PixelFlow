@@ -11,6 +11,10 @@
         <version>1.4.0-SNAPSHOT</version>
     </parent>
 
+    <properties>
+        <jogamp.version>2.3.2</jogamp.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>com.thomasdiewald</groupId>
@@ -31,6 +35,11 @@
             <groupId>cz.advel.jbullet</groupId>
             <artifactId>jbullet</artifactId>
             <version>20101010-1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jogamp.gluegen</groupId>
+            <artifactId>gluegen-rt-main</artifactId>
+            <version>${jogamp.version}</version>
         </dependency>
     </dependencies>
 

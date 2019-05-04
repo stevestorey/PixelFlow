@@ -29,7 +29,7 @@
         </dependency>
         <dependency>
             <groupId>org.jogamp.gluegen</groupId>
-            <artifactId>gluegen-rt</artifactId>
+            <artifactId>gluegen</artifactId>
             <version>${jogamp.version}</version>
         </dependency>
     </dependencies>
