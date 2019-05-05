@@ -207,6 +207,7 @@ public class Fluid_WindTunnel extends PApplet {
    
     // place some initial obstacles
     randomSeed(6);
+    /*
     for(int i = 0; i < 50; i++){
       float px = random(150, width-50);
       float py = random(50, height-50);
@@ -222,13 +223,13 @@ public class Fluid_WindTunnel extends PApplet {
       pg_obstacles_drawing.noStroke();
       pg_obstacles_drawing.fill(64);
       pg_obstacles_drawing.rect(px, py, 20, 20, random(0,10));
-    }
+    }*/
     
-    pg_obstacles_drawing.translate(200, height/2+50);
+    /*pg_obstacles_drawing.translate(200, height/2+50);
     pg_obstacles_drawing.rotate(0.3f);
     pg_obstacles_drawing.fill(200,0,0);
     pg_obstacles_drawing.textFont(font);
-    pg_obstacles_drawing.text("fluid simulation", 0, 0);
+    pg_obstacles_drawing.text("fluid simulation", 0, 0);*/
    
     pg_obstacles_drawing.endDraw();
     
@@ -269,7 +270,7 @@ public class Fluid_WindTunnel extends PApplet {
     pg_obstacles.clear();
     
     // add morph-shape as obstacles
-    pg_obstacles.pushMatrix();
+    /*pg_obstacles.pushMatrix();
     {
       pg_obstacles.noFill();
       pg_obstacles.strokeWeight(10);
@@ -279,7 +280,7 @@ public class Fluid_WindTunnel extends PApplet {
 //      morph.drawAnimated(pg_obstacles, 0.975f);
       morph.draw(pg_obstacles, mouseY/(float)height);
     }
-    pg_obstacles.popMatrix();
+    pg_obstacles.popMatrix();*/
     
     // add painted obstacles on top of it
     pg_obstacles.image(pg_obstacles_drawing, 0, 0);
@@ -546,8 +547,8 @@ public class Fluid_WindTunnel extends PApplet {
     public int draw_mode = 0;
     PGraphics pg;
     
-    float size_paint = 15;
-    float size_clear = size_paint * 2.5f;
+    float size_paint = 3;
+    float size_clear = size_paint * 5f;
     
     float paint_x, paint_y;
     float clear_x, clear_y;
